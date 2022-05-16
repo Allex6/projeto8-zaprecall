@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&family=Righteous&display=swap');
+
+body {
+    background-color: #FB6B6B;
+    font-family: 'Recursive', sans-serif;
+    color: #fff;
+}
+
+.app-screen {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.initial-screen {
+    justify-content: center;
+}
+
+.initial-screen .app-title {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.initial-screen button {
+    width: 246px;
+    height: 54px;
+    text-align: center;
+    color: #D70900;
+    font-size: 18px;
+    font-family: 'Recursive', sans-serif;
+    border: solid 1px #D70900;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px 0 #000;
+}
+
+.main-screen .app-header {
+    display: flex;
+    align-items: center;
+    margin-top: 42px;
+    margin-bottom: 50px;
+}
+
+.main-screen .app-header img {
+    margin-right: 20px;
+}
+
+.main-screen .items-wrapper {
+    padding-bottom: 200px;
+}
+
+.main-screen .items-wrapper .item {
+    color: #333;
+    font-family: 'Recursive', sans-serif;
+    font-size: 18px;
+    box-shadow: 0 1px 4px 0 #000;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+
+.main-screen .items-wrapper .item .initial-state {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.main-screen .items-wrapper .item .initial-state.answered p {
+    text-decoration: line-through;
+}
+
+.main-screen .items-wrapper .item .initial-state.with-error {
+    color: #ff3030;
+}
+
+.main-screen .items-wrapper .item .initial-state.with-success {
+    color: #2FBE34;
+}
+
+.main-screen .items-wrapper .item .initial-state.with-warning {
+    color: #FF922E;
+}
+
+.main-screen .items-wrapper .item ion-icon {
+    font-size: 24px;
+}
+
+.main-screen .items-wrapper .item .question-state {
+    position: relative;
+}
+
+.main-screen .items-wrapper .item .active-item {
+    min-height: 130px;
+    width: 300px;
+    background-color: #ffffd4;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.main-screen .items-wrapper .item .question-state ion-icon {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.main-screen .items-wrapper .item .answer-state .buttons-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.main-screen .items-wrapper .item .answer-state .buttons-wrapper button {
+    width: 30%;
+    color: #fff;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.app-footer {
+    background-color: #fff;
+    color: #333;
+    font-size: 18px;
+    width: 100%;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    box-shadow: 0 -1px 4px 0 black;
+}
+
+.app-footer .current-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-footer .current-score > div {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.app-footer .current-score p {
+    font-size: 18px;
+    text-align: center;
+    max-width: 95%;
+    margin: 10px auto;
+    line-height: inherit;
+}
+
+.app-footer .current-score p:last-child {
+    text-transform: uppercase;
+}
+
+.app-footer .current-score button {
+    height: 32px;
+    width: 170px;
+    background-color: #FB6B6B;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}

@@ -1,0 +1,36 @@
+.white-bg {
+    background-color: #fff;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.app-title {
+    font-family: 'Righteous', cursive;
+    font-size: 36px;
+}
+
+.bg-danger {
+    background-color: #FF3030;
+}
+
+.bg-warning {
+    background-color: #FF922E;
+}
+
+.bg-success {
+    background-color: #2FBE34;
+}
+
+ion-icon[name="close-circle"] {
+    color: #FF3030;
+}
+
+ion-icon[name="help-circle"] {
+    color: #FF922E;
+}
+
+ion-icon[name="checkmark-circle"] {
+    color: #2FBE34;
+}
